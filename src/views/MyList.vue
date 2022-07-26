@@ -1,8 +1,8 @@
 <template>
   <div class="container">
-    <h1>PWA Youtube demo</h1>
+    <h1 class="text-3xl font-bold underline">PWA Youtube demo 12</h1>
     <input v-model="itemName" type="text" /><br />
-    <button @click="addItem()">Add Item</button>
+    <button class="btn btn-primary" @click="addItem()">Add Item</button>
 
     <ul>
       <li
@@ -12,7 +12,7 @@
       >
         {{ item.name }} | {{item.age}} | {{item.datetime}}
         <router-link :to="{name: 'contact',params:{id:item._id,name:item.name,age:item.age}}">View</router-link>
-        ------<button @click="removeItem(item._id)">Delete</button>
+        ------<button class="btn w-32 rounded-full" @click="removeItem(item._id)">Delete</button>
         </li>
     </ul>
 
@@ -74,38 +74,3 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-.container {
-  background-color: #24e02dd2;
-  max-width: 400px;
-  margin: 0 auto;
-  border-radius: 8px;
-}
-li {
-  font-size: 1.5rem;
-  list-style: none;
-}
-button {
-  margin-top: 5px;
-  background-color: #3498db;
-  border: none;
-  color: #ffffff;
-  padding: 10px 20px;
-  font-size: 14px;
-  cursor: pointer;
-  border-radius: 4px;
-}
-input {
-  margin-top: 5px;
-  padding: 10px 20px;
-  font-size: 14px;
-  border-radius: 4px;
-}
-.bought {
-  text-decoration: line-through;
-}
-</style>

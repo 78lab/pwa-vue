@@ -1,6 +1,7 @@
 <template>
-    <h2>About test</h2>
+    <h1 class="text-3xl font-bold underline">About test 111</h1>
     msg: {{ msg }}  apiHost:{{apiHost}}
+    <button class="btn">Button</button>
 </template>
 
 <script>

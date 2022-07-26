@@ -1,0 +1,6 @@
+{
+  "appId": "com.lab78.myviteapp",
+  "appName": "myviteapp",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
