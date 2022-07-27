@@ -7,7 +7,7 @@ export default createRouter({
     {
       path: '/',
       name: 'home',
-      component: () => import('@/views/MyList.vue'),
+      component: () => import('@/views/Home.vue'),
     },
     {
       path: '/list',

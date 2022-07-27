@@ -7,9 +7,10 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> | 
+    <router-link to="/list">List</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
-  <main>
+  <main class="container px-4 mx-auto">
     <router-view />
   </main>
 </template>
